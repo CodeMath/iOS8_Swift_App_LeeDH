@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NavigationBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeN-Zf-OZL">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Navigation App" id="jJG-gB-2gw">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="YoR-DM-T0w"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="sZf-Fu-56b"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KP1-y7-fND">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="oj8-Zn-sjb"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RNn-f8-bVw"/>
+                                    <barButtonItem systemItem="refresh" id="yGp-Um-8iS"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KP1-y7-fND" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="QGm-pu-GpB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KP1-y7-fND" secondAttribute="trailing" constant="-16" id="XHm-py-H3h"/>
+                            <constraint firstItem="yeN-Zf-OZL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="aIF-FV-379"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yeN-Zf-OZL" secondAttribute="trailing" constant="-16" id="oUP-x3-0W1"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KP1-y7-fND" secondAttribute="bottom" id="tdD-ma-q7e"/>
+                            <constraint firstItem="yeN-Zf-OZL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="uIa-jl-bx8"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
